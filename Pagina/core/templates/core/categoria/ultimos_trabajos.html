@@ -1,0 +1,270 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+
+{% block principal %}
+
+<style>
+  .col-md-6 {
+    margin-top: 50px;
+    font-size: x-large;
+    color: black;
+    font-style: oblique;
+    line-height: 40px;
+    margin-top: 0px;
+    margin-right: 200px;
+  }
+
+  .styled-heading {
+      background-color: #021730;
+      padding: 10px;      
+      border-radius: 10px;
+      color: aliceblue;
+      width: 50%; /* Definir un ancho */
+      margin: 0 auto; /* Centrando con márgenes automáticos */
+      text-align: center; /* Centrar el texto dentro del h2 */
+  }
+
+
+</style>
+
+<h1 class="text-center"style="background-color: #021730; padding: 20px; color: aliceblue;">Ultimos Trabajos</h1>
+<!-- INICIO CONTAINER -->
+<section id="Mecanicos">
+  <br>
+    <h2 class="styled-heading" style="margin-bottom: 10px;">Renovación de la Suspensión</h2>
+    <div class="row text-center">
+      <div class="col-md-12 d-flex justify-content-center ">
+        <div class="card" style="width:500px">
+          <img class="card-img-top" src="{% static 'core/img/Jordi_Wild.png' %}" width="500" height="450" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Mecánico a cargo</h4>
+            <p class="card-text" style="color: black; font-size: medium;">Jordi Ahumada</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    </section>
+      <br>
+      <br>
+    <section>
+      <div class="categoria_cs">
+        <div class="row">
+          <img class="col-md-auto" src="{% static 'core/img/Suspension_1.png' %}"  width="300" height="300" style="width: 460px; margin: 0; padding: 0; margin-right: 5px;">
+          <h4 class="col-md-1" style="margin-right: 5px;">—Descripción de Trabajo. <p></p> Hecho el: <b>15/03/2024</b>—</h4>
+          <p class="col-md-6" style="padding: 0; margin: 0;">El cliente nos trajo su auto con el presunto problema de que las ruedas producían sonidos extraños. Al revisar con más detalle, nos percatamos de que la suspensión delantera presentaba un desgaste excesivo en los amortiguadores y los resortes, lo que probablemente causó una conducción inestable y ruidos fuertes, los cuales eran los que el cliente reportaba. Tuvimos que reemplazar los amortiguadores delanteros por unos nuevos. La reparación completa tomó aproximadamente 3 horas.</p>
+        </div>
+      </div>          
+    </section>
+      <br>
+      <br>
+      <section class="materiales">
+        <ul class="materiales-info">
+            <h4 style="padding-left: 5px;">&#9679; MATERIALES USADOS</h4>
+        <p style="color: black; font-size: larger; margin-left: 10px;">Para este trabajo utilizamos el equipo de elevación mecánica, compresor de resortes, llaves de rueda y de torsión, el alineador de ruedas y, por último, el repuesto para las suspensiones delanteras.</p>
+        </ul>
+      </section>
+      <br>
+      <hr>
+<!--  FIN CONTAINER   -->
+<!-- INICIO CONTAINER -->
+<section id="Mecanicos" >
+  <br>
+    <h2 class="styled-heading" style="margin-bottom: 10px;">Un sistema eléctrico deficiente</h2>
+    <div class="row text-center">
+      <div class="col-md-12 d-flex justify-content-center ">
+        <div class="card" style="width:500px">
+          <img class="card-img-top" src="{% static 'core/img/Willyrex.png' %}" width="500" height="450" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Mecánico a cargo</h4>
+            <p class="card-text" style="color: black; font-size: medium;">Guillermo González</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    </section>
+      <br>      
+      <br>
+      <section>
+      <div class="categoria_cs">
+        <div class="row">
+          <img class="col-md-auto" src="{% static 'core/img/sistema_electrico.jpeg' %}"  width="300" height="300" style="width: 460px; margin: 0; padding: 0; margin-right: 5px;">
+          <h4 class="col-md-1">—Descripción de Trabajo <p></p> Hecho el: <b>25/03/2024</b>—</h4>
+          <p class="col-md-6" >Una vez que el dueño del automóvil nos contó que su auto no estaba funcionando como era debido, nos pusimos manos a la obra para descubrir el problema. Después de descartar a los posibles causantes de esta avería, logramos dar con los culpables. Resulta que el sistema eléctrico del auto tenía el alternador en medio de la caja de fusibles, y esto, debido a que estaba en una posición poco ortodoxa (probablemente por culpa de un mecánico inexperto), terminó quemando la caja de fusibles. El auto pudo recuperar su funcionalidad una vez pusimos el alternador en su lugar correspondiente y recambiamos la caja de fusibles.</p>
+        </div>
+      </div>         
+      </section>
+      <br>
+      <br>
+      <section class="materiales">
+        <ul class="materiales-info">
+            <h4 style="padding-left: 5px;">&#9679; MATERIALES USADOS</h4>
+        <p style="color: black; font-size: larger; margin-left: 10px;">Utilizamos nuestro medidor de voltaje para intentar descartar las posibles causas de la avería, y en el sonido se presentó una irregularidad que nos llevó a revisar los componentes del sistema eléctrico del motor, y dimos con la causa del problema. Al final, cambiamos toda la caja de fusibles y devolvimos el alternador a su lugar.</p>
+        </ul>
+      </section>
+      <br> 
+      <hr>
+<!--  FIN CONTAINER   -->
+
+
+<!-- INICIO CONTAINER -->
+<section id="Mecanicos">
+  <br>
+    <h2 class="styled-heading" style="margin-bottom: 10px;">El electromotor sin electricidad</h2>
+    <div class="row text-center">
+      <div class="col-md-12 d-flex justify-content-center ">
+        <div class="card" style="width:500px">
+          <img class="card-img-top" src="{% static 'core/img/Willyrex.png' %}" width="500" height="450" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Mecánico a cargo</h4>
+            <p class="card-text" style="color: black; font-size: medium;">Guillermo González</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    </section>
+      <br>
+      <br>
+      <section>
+      <div class="categoria_cs">
+        <div class="row">
+          <img class="col-md-auto" src="{% static 'core/img/Motor-de-Arranque.png' %}"  width="300" height="300" style="width: 460px; margin: 0; padding: 0; margin-right: 5px;">
+          <h4 class="col-md-1">—Descripción de Trabajo. <p></p> Hecho el: <b>12/03/2024</b>—</h4>
+          <p class="col-md-6" >El dueño del automóvil llegó a nuestro taller con el problema de que su auto no partía. Inmediatamente sospechamos que podía ser una avería de algún tipo en el motor de arranque. Después de una revisión extensa del motor de arranque, descubrimos que su electro motor se encontraba frito e inutilizable, por lo tanto, era necesario reemplazar la pieza.</p>
+        </div>
+      </div>          
+      </section>
+      <br>
+      <br>      
+      <section class="materiales">
+        <ul class="materiales-info">
+            <h4 style="padding-left: 5px;">&#9679; MATERIALES USADOS</h4>
+        <p style="color: black; font-size: larger; margin-left: 10px;">Para el diagnóstico del problema, tuvimos que utilizar un medidor de voltaje. Al comprobar efectivamente que el motor sí recibía energía, procedimos a desarmarlo con taladros de precisión. Luego, utilizamos nuestro medidor de voltaje para revisar cada componente uno por uno hasta descubrir que, efectivamente, el electromotor no recibía suficiente amperaje, obligándonos a cambiarlo.</p>
+        </ul>
+      </section>
+      <br>
+      <hr>
+<!--  FIN CONTAINER   -->
+
+<!-- INICIO CONTAINER -->
+<section id="Mecanicos">
+  <br>
+    <h2 class="styled-heading" style="margin-bottom: 10px;">Desgaste poco uniforme de los neumáticos</h2>
+    <div class="row text-center">
+      <div class="col-md-12 d-flex justify-content-center ">
+        <div class="card" style="width:500px">
+          <img class="card-img-top" src="{% static 'core/img/Jordi_Wild.png' %}" width="500" height="450" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Mecánico a cargo</h4>
+            <p class="card-text" style="color: black; font-size: medium;">Jordi Ahumada</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    </section>
+      <br>
+      <br>
+      <section>
+      <div class="categoria_cs">
+        <div class="row">
+          <img class="col-md-auto" src="{% static 'core/img/Suspension_2.png' %}"  width="300" height="300" style="width: 460px; margin: 0; padding: 0; margin-right: 5px;">
+          <h4 class="col-md-1">—Descripción de Trabajo. <p></p> Hecho el: <b>10/04/2024</b>—</h4>
+          <p class="col-md-6" >Procedimos a reparar la suspensión del auto de un cliente que tenía el problema de sufrir vibraciones excesivas al circular a altas velocidades. Diagnosticamos que las vibraciones eran causadas por un desgaste irregular de los neumáticos debido a una alineación deficiente de la suspensión. Inspeccionamos los neumáticos y determinamos la necesidad de reemplazarlos debido al desgaste anormal. También ajustamos la alineación de la suspensión para corregir el problema y garantizar un desgaste uniforme de los neumáticos en el futuro.</p>
+        </div>
+      </div>          
+      </section>
+      <br>
+      <br>
+      <section class="materiales">
+        <ul class="materiales-info">
+            <h4 style="padding-left: 5px;">&#9679; MATERIALES USADOS</h4>
+        <p style="color: black; font-size: larger; margin-left: 10px;">Para esta tarea, empleamos el equipo de elevación mecánica, un compresor de resortes, unas herramientas de llaves de rueda y torsión, el alineador de ruedas y, finalmente, cambiamos los neumáticos para asegurarnos de evitar futuros problemas.</p>
+        </ul>
+      </section>
+      <br>
+      <hr>
+<!--  FIN CONTAINER   -->
+<!-- INICIO CONTAINER -->
+<section id="Mecanicos">
+  <br>
+  <h2 class="styled-heading" style="margin-bottom: 10px;">Ruidos y rigidez de volante</h2>
+  <div class="row text-center">
+    <div class="col-md-12 d-flex justify-content-center ">
+      <div class="card" style="width:500px">
+        <img class="card-img-top" src="{% static 'core/img/Jordi_Wild.png' %}" width="500" height="450" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Mecánico a cargo</h4>
+          <p class="card-text" style="color: black; font-size: medium;">Jordi Ahumada</p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  </section>
+    <hr>
+    <br>
+    <section>
+    <div class="categoria_cs">
+      <div class="row">
+        <img class="col-md-auto" src="{% static 'core/img/Direccional.png' %}"  width="300" height="300" style="width: 460px; margin: 0; padding: 0; margin-right: 5px;">
+        <h4 class="col-md-1">—Descripción de Trabajo. <p></p> Hecho el: <b>05/04/2024</b>—</h4>
+        <p class="col-md-6" style="padding: 0; margin: 0;" >El cliente nos comentó que su auto presenta dificultades para girar en una dirección específica y se escuchan ruidos anormales al girar el volante. Al revisar el auto, efectivamente, la dirección se siente dura y poco precisa al maniobrar con el vehículo. Verificamos los componentes clave como la cremallera de dirección, la bomba hidráulica y la columna de dirección. Al final, encontramos que estaban desgastados los cojinetes que sostenían a la cremallera de dirección, ocasionando todos los problemas. Retiramos el volante y el airbag, desconectamos los componentes eléctricos y mecánicos que están unidos a la columna. Aflojamos y retiramos los pernos que sujetan la columna al chasis y cambiamos la parte dañada por una nueva.</p>
+      </div>
+    </div>          
+    </section>
+    <br>
+    <br>
+    <section class="materiales">
+      <ul class="materiales-info">
+          <h4 style="padding-left: 5px;">&#9679; MATERIALES USADOS</h4>
+      <p style="color: black; font-size: larger; margin-left: 10px;">Para este trabajo utilizamos llaves y trinquetes de diferentes tamaños para aflojar y apretar tuercas y pernos, juego de llaves Allen para desmontar componentes eléctricos conectados al volante, destornilladores de punta plana y de estrella para desmontar paneles y componentes, extractor de volante para retirar el volante sin dañar ningún componente, llave dinamométrica para asegurar un apriete correcto de los pernos y por último, alicates para desconectar conectores eléctricos y abrazaderas.</p>
+      </ul>
+    </section>
+    <br>
+    <hr>
+<!--  FIN CONTAINER   -->
+
+<!-- INICIO CONTAINER -->
+<section id="Mecanicos">
+  <br>
+  <h2 class="styled-heading" style="margin-bottom: 10px;">Un cambio para la caja de cambios</h2>
+  <div class="row text-center">
+    <div class="col-md-12 d-flex justify-content-center ">
+      <div class="card" style="width:500px">
+        <img class="card-img-top" src="{% static 'core/img/Dross.png' %}" width="500" height="450" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Mecánico a cargo</h4>
+          <p class="card-text" style="color: black; font-size: medium;">Ángel Recabarren</p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  </section>
+    <br>
+    <br>
+    <section>
+    <div class="categoria_cs">
+      <div class="row">
+        <img class="col-md-auto" src="{% static 'core/img/Reparacion-cajas de cambio.png' %}"  width="300" height="300" style="width: 460px; margin: 0; padding: 0; margin-right: 5px;">
+        <h4 class="col-md-1">—Descripción de Trabajo. <p></p> Hecho el: <b>02/04/2024</b>—</h4>
+        <p class="col-md-6" >El cliente llegó a nuestro taller con un problema que él mismo había determinado. Cuando le preguntamos al respecto, señaló la palanca de cambios y dijo 'La palanca está mal', por lo tanto, partimos por lo obvio y revisamos el estado de la palanca en sí. Nos dimos cuenta de que la palanca apenas seguía montada en la caja de cambios, lo cual nos llevó a dudar respecto al estado de la caja de cambios en sí, e hicimos bien en investigar, pues resulta que la caja está en un estado atroz. Sus cojinetes se han desgastado, había holgura entre los engranajes, por lo tanto, producía un ruido monstruoso y, por si fuera poco, el aceite era el inadecuado. Realmente un caso PERTURBADOR.</p>
+      </div>
+    </div>          
+    </section>
+    <br>
+    <br>
+    <section class="materiales">
+      <ul class="materiales-info">
+          <h4 style="padding-left: 5px;">&#9679; MATERIALES USADOS</h4>
+      <p style="color: black; font-size: larger; margin-left: 10px;">Para remover la parte dañada e instalar la parte nueva, utilizamos llaves inglesas, destornilladores de precisión y llaves de torque. Al terminar de reemplazar la caja de cambios, aplicamos lubricante y selladores para asegurar un mejor ciclo de vida para el componente.</p>
+      </ul>      
+    </section>
+    <br>    
+    <br>
+<!--  FIN CONTAINER   -->
+
+{% endblock %}

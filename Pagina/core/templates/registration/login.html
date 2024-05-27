@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block principal %}
+
+{% load crispy_forms_tags %}
+
+<div class="white_card mb_30" style="margin: 0 15px;">
+    <div class="white_card_header">
+        <div class="box_header m-0">
+            <div class="main-title">
+                <h2 class="m-0">Inicio de Sesion</h2>
+            </div>
+        </div>
+    </div>
+    <div class="white_card_body">
+            <div class="row"></div>
+            <div class="col sm-8 offset">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <input type="submit" class="btn btn-primary" value="Ingresar" style="margin-top: 15px;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+

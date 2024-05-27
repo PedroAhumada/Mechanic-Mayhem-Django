@@ -1,0 +1,169 @@
+{% extends 'core/base.html' %} {% load static %} {% block principal %}
+
+<style>
+  .titulo {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+
+  .titulo_esp {
+    display: inline;
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+
+  .comentarios {
+    margin-top: 10px; /* Espacio superior para separar los comentarios */
+  }
+</style>
+
+<table style="margin-left: 15px; margin-right: 15px">
+  <h2
+    style="
+      margin-bottom: -10px;
+      background-color: #021730;
+      padding: 20px;
+      color: aliceblue;
+    "
+  >
+    Aceptar / Denegar Proyectos
+  </h2>
+  <tbody>
+    {% for proyecto in lista2 %}
+    <tr>
+      <td colspan="4"><hr /></td>
+      <!-- Separador entre proyectos -->
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="payment_gatway">
+          <div class="titulo">
+            <h4
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="font-size: x-large"
+            >
+              Título:
+            </h4>
+            <h5
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="padding-left: 10px; margin-top: 4px"
+            >
+              {{ proyecto.titulo }}
+            </h5>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="payment_gatway">
+          <div class="titulo">
+            <h4
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="font-size: x-large"
+            >
+              Mecánico:
+            </h4>
+            <h5
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="padding-left: 10px; margin-top: 4px"
+            >
+              {{ proyecto.nombre_mecanico }}
+            </h5>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="payment_gatway">
+          <div class="titulo">
+            <h4
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="font-size: x-large"
+            >
+              Categoría:
+            </h4>
+            <h5
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="padding-left: 10px; margin-top: 4px"
+            >
+              {{ proyecto.categoria }}
+            </h5>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="payment_gatway">
+          <div class="titulo_esp">
+            <h6
+              class="byer_name f_s_16 f_w_700 color_theme"
+              style="font-size: x-large"
+            >
+              Descripción:
+              <span style="font-size: 16px">{{ proyecto.descripcion }}</span>
+            </h6>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="comentarios">
+          <h4
+            class="byer_name f_s_16 f_w_700 color_theme"
+            style="font-size: x-large"
+          >
+            Comentarios:
+          </h4>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="5"
+            cols="145"
+          ></textarea>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <div class="payment_gatway">
+          <button class="btn btn-success" type="submit">Aceptar</button>
+          <button type="button" id="btn-denegar" class="btn btn-danger">
+            Denegar
+          </button>
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<div>
+  <br style="color: white" />
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript para manejar el clic de los botones -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnAceptar = document.getElementById("btn-aceptar");
+    const btnDenegar = document.getElementById("btn-denegar");
+
+    btnAceptar.addEventListener("click", function () {
+      alert("Aceptaste un nuevo proyecto, en breve se subirá.");
+      console.log('Se presionó el botón "Aceptar"');
+    });
+
+    btnDenegar.addEventListener("click", function () {
+      alert("Denegaste este proyecto, ya no se subirá.");
+      console.log('Se presionó el botón "Denegar"');
+    });
+  });
+</script>
+
+{% endblock %}

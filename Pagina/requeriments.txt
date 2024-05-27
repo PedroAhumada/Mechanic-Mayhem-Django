@@ -1,0 +1,11 @@
+django
+django-admin-interface
+django-crispy-forms
+crispy-bootstrap4
+pillow
+zeep
+psycopg2
+djangorestframework
+requests
+
+pip install -r requeriments.txt

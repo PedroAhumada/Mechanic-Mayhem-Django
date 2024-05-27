@@ -1,0 +1,221 @@
+{% extends 'core/base.html' %} {% load static %} {% block principal %}
+
+<style>
+  .col-md-6 {
+    margin-top: 50px;
+    font-size: x-large;
+    color: black;
+    font-style: oblique;
+    line-height: 40px;
+    margin-top: 0px;
+    margin-right: 200px;
+  }
+
+  .styled-heading {
+      background-color: #021730;
+      padding: 10px;      
+      border-radius: 10px;
+      color: aliceblue;
+      width: 50%; /* Definir un ancho */
+      margin: 0 auto; /* Centrando con márgenes automáticos */
+      text-align: center; /* Centrar el texto dentro del h2 */
+  }
+
+</style>
+
+<h1 class="text-center" style="background-color: #021730; padding: 20px; color: aliceblue;"> Categorías</h1>
+<br />
+<!-- INICIO CONNTENIDO -->
+<section id="categoria_sus">
+  <hr>
+  <h3 class="my-3 text-center">Suspensión y Dirección</h3>
+  <br />
+  <div class="categoria_cs">
+    <dv class="row">
+      <img
+        class="col-md-auto"
+        src="{% static 'core/img/suspension_modelo.png' %}"
+        width="300"
+        height="300"
+      />
+      <h2 style="white-space: nowrap; flex: 1; margin: 0; padding: 0;" class="col-md-1">¿Qué es?</h2>
+      <!--USAR STYLE PARA DEJAR INFO AL LADO DE LA IMAGEN -->
+      <p style="position: relative;" class="col-md-6">
+        La suspensión es el sistema que conecta el chasis del vehículo con las
+        ruedas. Este sistema está compuesto de amortiguadores y barras
+        estabilizadoras, responsables de brindar viajes suaves y estables, pues
+        se encarga de absorber (lo más posible) las irregularidades del camino.
+        El apartado de dirección es todo el sistema que permite controlar al
+        vehículo, como el volante, la caja de dirección y las barras de
+        dirección.
+      </p>
+    </dv>
+  </div>
+  <hr />
+  <ul>
+    <h4 style="padding-left: 5px;">&#9679; Proceso del trabajo y valor</h4>
+    <p style="color: black; font-size: larger; margin-left: 10px;">
+      Las averías comunes en el sistema de suspensión van desde la falta de
+      mantenimiento de los amortiguadores (costando $95.000) hasta las
+      vibraciones excesivas del vehículo, lo cual suele sugerir que hace falta
+      reemplazar gran parte del sistema por uno nuevo, costando $450.000 solo la
+      mano de obra.
+    </p>
+    <br>
+    <p style="color: black; font-size: larger; margin-left: 10px;"">VALOR DEL TRABAJO: <b><strong>$95.000 a $750.000</strong></b></p>
+  </ul>
+  <hr />
+  <h2 class="styled-heading" style="margin-bottom: 10px;">
+    Mecánico a Cargo del Área de Suspensión y Dirección
+  </h2>
+  <div class="col-md-12 d-flex justify-content-center">
+    <div class="card" style="width: 500px">
+      <img
+        class="card-img-top"
+        src="{% static 'core/img/Jordi_Wild.png' %}"
+        width="500"
+        height="400"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title1">Jordi Ahumada</h4>
+        <p class="card-text" style="color: black; font-size: medium;">
+          Diestro en herramientas pesadas y maestro en mantenimiento hidráulico
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr />
+</section>
+<!--   FIN CONNTENIDO  -->
+
+<!-- INICIO CONNTENIDO -->
+<section id="categoria_ele">
+  <h2 class="my-3 text-center">Electrónica</h2>
+  <br />
+  <div class="categoria_cs">
+    <div class="row">
+      <img
+        class="col-md-auto"
+        src="{% static 'core/img/Electronica.png' %}"
+        style="width: 395px; margin: 0; padding: 0; margin-right: 5px;"
+        width="300"
+        height="300"
+      />
+      <h2 class="col-md-1" style="white-space: nowrap; flex: 1; margin: 0; padding: 0;" class="col-md-1">¿Qué es?</h2>
+      <!--USAR STYLE PARA DEJAR INFO AL LADO DE LA IMAGEN -->
+      <p class="col-md-6" style="position: relative;">
+        El sistema eléctrico del automóvil consta de múltiples componentes que
+        permiten su funcionamiento. Los componentes más fundamentales serían la
+        batería, el motor de arranque y el alternador. En cuanto a su
+        funcionamiento, la batería proporciona energía al motor de arranque, y
+        luego el alternador convierte la energía mecánica generada por el motor
+        en energía eléctrica que alimenta el vehículo y el sistema eléctrico en
+        general.
+      </p>
+    </div>
+  </div>
+  <hr />
+  <ul>
+    <h4 style="padding-left: 5px;">&#9679; Proceso del Trabajo y Valor</h4>
+    <p style="color: black; font-size: larger; margin-left: 10px;">
+      En cuanto al precio estipulado, suele depender de la gravedad de la
+      avería, aunque en la mayoría de los casos hace falta reemplazar las partes
+      dañadas por partes nuevas, lo cual hace mucho más caro el proceso. El
+      cambio de batería ronda los $50.000 (sin contar la refacción), $345.000
+      por cambiar el alternador y $72.000 por mantenimiento al motor de
+      arranque.
+    </p>
+    <br>
+    <p style="color: black; font-size: larger; margin-left: 10px;">VALOR DEL TRABAJO: <b><strong>$95.000 a $600.000</strong></b></p>
+  </ul>
+  <hr />
+  <h2 class="styled-heading" style="margin-bottom: 10px;">Mecánico a Cargo del Área de Electrónica</h2>
+  <div class="col-md-12 d-flex justify-content-center">
+    <div class="card" style="width: 500px">
+      <img
+        class="card-img-top"
+        src="{% static 'core/img/Willyrex.png' %}"
+        width="500"
+        height="400"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title1">Guillermo Gonzalez</h4>
+        <p class="card-text" style="color: black; font-size: medium;">Profesional certificado en Electrónica</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+</section>
+<!--   FIN CONNTENIDO  -->
+
+<!-- INICIO CONNTENIDO -->
+<section id="categoria_cam">
+  <h2 class="my-3 text-center">Caja de Cambios</h2>
+  <br />
+  <div class="categoria_cs">
+    <div class="row">
+      <img
+        class="col-md-auto"
+        src="{% static 'core/img/Caja de cambios.png' %}"
+        width="300"
+        height="300"
+      />
+      <h2 class="col-md-1" style="white-space: nowrap; flex: 1; margin: 0; padding: 0;" class="col-md-1">¿Qué es?</h2>
+      <!--USAR STYLE PARA DEJAR INFO AL LADO DE LA IMAGEN -->
+      <p class="col-md-6">
+        Las cajas de cambio o de transmisión varían entre manuales y
+        automáticas. Su función es actuar como intermediaria entre el cigüeñal y
+        las ruedas, de manera que estas siempre se encuentren a la par con el
+        motor. Esto es necesario para desplazar el vehículo y se logra subiendo
+        y bajando la cantidad de revoluciones para sacarle el mayor partido
+        posible al motor de nuestro vehículo. Comúnmente, la caja de cambios de
+        un vehículo convencional trae de 5 a 6 cambios.
+      </p>
+    </div>
+  </div>
+  <hr />
+  <ul>
+    <h4 style="padding-left: 5px;">&#9679; Proceso del trabajo y valor</h4>
+    <p style="color: black; font-size: larger; margin-left: 10px;">
+      Las averías más comunes de las cajas de cambios manuales van desde la
+      holgura entre engranajes hasta la falta de lubricación entre ellos. Por lo
+      tanto, reparar una caja de cambios suele ser relativamente barato,
+      rondando los $90.000. Si hace falta reemplazar toda la caja, entonces el
+      valor rondaría por los $320.000. En cambio, una caja de cambios eléctrica
+      es otra compleja invención con otro tipo de averías que necesitarían de un
+      experto en electrónica.
+    </p>
+    <br>
+    <p style="color: black; font-size: larger; margin-left: 10px;">
+      VALOR DEL TRABAJO: <b><strong>$90.000 a $400.000 (dependiendo de la avería)</strong></b>
+    </p>
+  </ul>
+  <hr />
+  <h2 class="styled-heading" style="margin-bottom: 10px;">
+    Mecánico a Cargo del Área de Cajas de Cambios
+  </h2>
+  <div class="col-md-12 d-flex justify-content-center">
+    <div class="card" style="width: 500px">
+      <img
+        class="card-img-top"
+        src="{% static 'core/img/Dross.png' %}"
+        width="500"
+        height="400"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title1">Ángel Recabarren</h4>
+        <p class="card-text" style="color: black; font-size: medium;">
+          Experto en el mantenimiento automotriz y dueño de Mechanic Mayhem
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<!--   FIN CONNTENIDO  -->
+
+{% endblock %}
+

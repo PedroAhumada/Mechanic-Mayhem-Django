@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block principal %}
+
+{% load crispy_forms_tags %}
+
+    <style>
+        .espacio {
+        margin-bottom: 15px;     
+        }
+    </style>
+
+    <form action="" method="POST" style="margin-left: 15px;" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            {{ form  | crispy }}
+        </table>
+        <div class="espacio"></div>
+        
+        <input class="btn btn-success" type="submit" value="Subir">
+
+    </form>
+
+    <h4>{{ msj }}</h4>
+
+   
+
+{% endblock %}

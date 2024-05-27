@@ -1,0 +1,173 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% url 'ultimos_trabajos' %}
+
+{% block principal %}
+
+<style>
+  .custom-button {
+    background-color: #021730;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button-text {
+    color: white;
+    margin: 0;
+}
+</style>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="{% static 'core/img/Motor-de-Arranque.png' %}" width="1000" height="550" alt="Trabajo 1" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <a class="rounded-pill custom-button" href="{% url 'ultimos_trabajos' %}">
+                  <h3 class="button-text">Reparación motor de arranque</h3>
+              </a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{% static 'core/img/sistema_electrico.jpeg' %}" width="1000" height="550" alt="Trabajo 2" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <a class="rounded-pill custom-button" href="{% url 'ultimos_trabajos' %}">
+                  <h3 class="button-text">Sistema eléctrico del motor</h3>
+              </a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{% static 'core/img/Caja_de_cambios.png' %}" width="1000" height="550" alt="Trabajo 3" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <a class="rounded-pill custom-button" href="{% url 'ultimos_trabajos' %}">
+                  <h3 class="button-text">Caja de cambios</h3>
+              </a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{% static 'core/img/Suspension_1.png' %}" width="1000" height="550" alt="Trabajo 4" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <a class="rounded-pill custom-button" href="{% url 'ultimos_trabajos' %}">
+                  <h3 class="button-text">Suspensiones</h3>
+              </a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{% static 'core/img/Direccional.png' %}" width="1000" height="550" alt="Trabajo 5" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <a class="rounded-pill custom-button" href="{% url 'ultimos_trabajos' %}">
+                  <h3 class="button-text">Direccional</h3>
+              </a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{% static 'core/img/Suspension_2.png' %}" width="1000" height="550" alt="Trabajo 6" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <a class="rounded-pill custom-button" href="{% url 'ultimos_trabajos' %}">
+                  <h3 class="button-text">Reparación de ejes</h3>
+              </a>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  
+<!-- FIN CAROUSEL -->
+<br>
+<br>
+<br>
+<!-- INICIO CONTAINER -->
+<div class="container">
+    <section id="categoria" >
+      <h2 class="my-3 text-center" style="background-color: #021730; padding: 20px; border-radius: 10px;color: aliceblue;">Categorías</h2>
+      <br>
+      <div class="textcategoria">
+        <div class="row text-center">
+          <div class="col-md-6">
+            <img src="{% static 'core/img/Electronica.png' %}" width="300" height="300">
+            <br>                
+            <a class="textocont" href="{% url 'categoriacategorias' %}"><h4 class="mt-3">Electrónica</h4></a>
+            <p style="color: black; font-size: larger; margin-left: 10px;">Nuestros mecánicos poseen experiencia refaccionando motores de arranque, 
+              sistema de carga, reparaciones e instalaciones de accesorios y luces en general.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'core/img/Caja_de_cambios.png' %}" width="300" height="300">
+            <br>
+            <a class="textocont" href="{% url 'categoriacategorias' %}"><h4 class="mt-3">Caja de Cambios</h4></a>
+            <p style="color: black; font-size: larger; margin-left: 10px;">
+              Realizamos todo tipo de mantenimientos al componente más fundamental para su vehículo y 
+              poseemos refacciones para todo tipo de caja de cambios, desde manuales, automáticas y de doble embriague.</p>
+          </div>
+          <div class="col-md-12">
+              <img src="{% static 'core/img/Suspension_modelo.png' %}" width="300" height="300">
+              <br>
+              <a class="textocont" href="{% url 'categoriacategorias' %}"><h4 class="mt-3">Suspensión/Dirección</h4></a>
+              <p style="color: black; font-size: larger; margin-left: 10px;">Poseemos las herramientas y el equipo necesario para reparar fugas de aire, el mal funcionamiento del compresor y la humedad excesiva en el sistema, etc. Y si hace falta, podemos renovar una de las partes que más preocupan a las personas a la hora de ir al mecánico: sus suspensiones y la direccional del vehiculo.
+                </p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="Mecanicos">
+      <hr> <!-- LINEA PARA DIVIDIR -->
+        <h2 class="my-3 text-center"style="background-color: #021730; padding: 20px; border-radius: 10px;color: aliceblue;">Mecánicos</h2>
+        <div class="row text-center">
+          <div class=" col-md-4 d-flex justify-content-center" style="margin-bottom: 10px;">
+            <div class="card" style="width:500px">
+              <img class="card-img-top" src="{% static 'core/img/Willyrex.png' %}" width="500" height="450" alt="Card image">
+              <div class="card-body">
+                <a href="{% url 'empleados' %}"><h4 class="card-title">Guillermo González</h4></a>
+                <p class="card-text" style="color: black; font-size: medium;">Nuestro mecánico Guillermo se especializa en el ámbito electrónico 
+                  resaltando sus habilidades en la reparación de motores de arranque y alternadores.</p>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4 d-flex justify-content-center" style="margin-bottom: 10px;">
+            <div class="card" style="width:500px">
+              <img class="card-img-top" src="{% static 'core/img/Dross.png' %}" width="500" height="450" alt="Card image">
+              <div class="card-body">
+                <a href="{% url 'empleados' %}"><h4 class="card-title">Ángel Recabarren</h4></a>
+                <p class="card-text" style="color: black; font-size: medium;">Ángel es un experto en los sofisticados componentes electrohidráulicos 
+                  los cuales conforman la maquinaria automotriz.</p>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-4 d-flex justify-content-center" style="margin-bottom: 10px;">
+            <div class="card" style="width:500px">
+              <img class="card-img-top" src="{% static 'core/img/Jordi_wild.png' %}" width="500" height="450" alt="Card image">
+              <div class="card-body">
+                <a href="{% url 'empleados' %}"><h4 class="card-title">Jordi Ahumada</h4></a>
+                <p class="card-text" style="color: black; font-size: medium;">Jordi se distingue por su profundo conocimiento y destreza en el arte de restaurar la estabilidad y 
+                  el control de los vehículos a través de la reparación de sus sistemas de suspensión y dirección.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <br>
+  </div>
+
+<!--  FIN CONTAINER   -->
+{% endblock %}
+
